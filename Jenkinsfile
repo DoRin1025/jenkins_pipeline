@@ -6,6 +6,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh 'hostname'
+                sh 'ansible --version'
             }
         }
     }
